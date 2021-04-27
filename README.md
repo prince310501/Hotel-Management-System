@@ -1,5 +1,7 @@
 # Hotel-Management-System
 It is a Full-Stack Application in which there are several hotels,type of rooms that can be booked.
+It is developed using NodeJS, ExpressJS , MySql , React JS and other front-end tecnologies.
+
 
 
 
