@@ -11,4 +11,5 @@ After Booking, He can give reviews and ratings are updated as soon as review is 
 
 There is history page for the user which maintains his previous bookings and in case of any doubts, there is 'Contact Us' section also. There are seperate pages for user to see only his reviews and memories.
 
-lastly, the user can logout.
+All the input fields are validated. 
+Lastly, the user can logout.
