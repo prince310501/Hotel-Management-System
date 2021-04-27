@@ -213,7 +213,7 @@ route.post('/pay',(req,res)=>{
         if(err)
         {
             console.log(err)
-            res.json({msg:"error in function"})
+            res.json({msg:"Fill Your details first"})
         }
         else
         {

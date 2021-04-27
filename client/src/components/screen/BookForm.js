@@ -139,8 +139,21 @@ const BookForm = (props) => {
         console.log(`here2 ${bookfroms}  ${booktos} ${peoples}`)
         axios.post('http://localhost:5000/pay',{amount:amount,bookfrom:bookfroms,bookto:booktos,hotelid:hotelid,roomid:roomid,people:peoples})
         .then(res=>{
-            var bid=res.data.info
-            props.history.push(`bill/${bid}`)
+            if(res.data.msg)
+            {
+                setCheck(-1)
+                setMsg(res.data.msg)
+                setRoomid(0)
+                setTotal(0)
+                setAmount(0)
+                setHotelid(0)
+            }
+            else
+            {
+                var bid=res.data.info
+                props.history.push(`bill/${bid}`)
+            }
+            
         })
         .catch(err=>{
             console.log(err)
